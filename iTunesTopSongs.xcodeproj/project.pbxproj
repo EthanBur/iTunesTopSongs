@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418029224645DD0006ACC6A /* DetailViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418029124645DD0006ACC6A /* DetailViewExtensions.swift */; };
 		04CEFA4E2462FE7900EBBB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA4D2462FE7900EBBB4C /* AppDelegate.swift */; };
 		04CEFA502462FE7900EBBB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA4F2462FE7900EBBB4C /* SceneDelegate.swift */; };
 		04CEFA522462FE7900EBBB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA512462FE7900EBBB4C /* ViewController.swift */; };
-		04CEFA552462FE7900EBBB4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEFA532462FE7900EBBB4C /* Main.storyboard */; };
 		04CEFA582462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA562462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld */; };
 		04CEFA5A2462FE7E00EBBB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CEFA592462FE7E00EBBB4C /* Assets.xcassets */; };
 		04CEFA5D2462FE7E00EBBB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEFA5B2462FE7E00EBBB4C /* LaunchScreen.storyboard */; };
+		04CEFA652463079E00EBBB4C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA642463079E00EBBB4C /* MainView.swift */; };
+		04CEFA672463081D00EBBB4C /* MainViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA662463081D00EBBB4C /* MainViewExtensions.swift */; };
+		04CEFA692463085800EBBB4C /* MainViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA682463085800EBBB4C /* MainViewCustomCell.swift */; };
+		04CEFA6B24630D1000EBBB4C /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA6A24630D1000EBBB4C /* AlbumModel.swift */; };
+		04CEFA6D2464526100EBBB4C /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA6C2464526100EBBB4C /* UIImageViewExtensions.swift */; };
+		04E62252246456E700C9B4CD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E62251246456E700C9B4CD /* DetailViewController.swift */; };
+		04E622552464577E00C9B4CD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E622542464577E00C9B4CD /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0418029124645DD0006ACC6A /* DetailViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewExtensions.swift; sourceTree = "<group>"; };
 		04CEFA4A2462FE7900EBBB4C /* iTunesTopSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTopSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEFA4D2462FE7900EBBB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CEFA4F2462FE7900EBBB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04CEFA512462FE7900EBBB4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04CEFA542462FE7900EBBB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CEFA572462FE7900EBBB4C /* iTunesTopSongs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesTopSongs.xcdatamodel; sourceTree = "<group>"; };
 		04CEFA592462FE7E00EBBB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CEFA5C2462FE7E00EBBB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CEFA5E2462FE7E00EBBB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CEFA642463079E00EBBB4C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		04CEFA662463081D00EBBB4C /* MainViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewExtensions.swift; sourceTree = "<group>"; };
+		04CEFA682463085800EBBB4C /* MainViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCustomCell.swift; sourceTree = "<group>"; };
+		04CEFA6A24630D1000EBBB4C /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		04CEFA6C2464526100EBBB4C /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		04E62251246456E700C9B4CD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04E622542464577E00C9B4CD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +74,61 @@
 			children = (
 				04CEFA4D2462FE7900EBBB4C /* AppDelegate.swift */,
 				04CEFA4F2462FE7900EBBB4C /* SceneDelegate.swift */,
-				04CEFA512462FE7900EBBB4C /* ViewController.swift */,
-				04CEFA532462FE7900EBBB4C /* Main.storyboard */,
+				04E62253246456ED00C9B4CD /* View Controller */,
+				04CEFA702464551100EBBB4C /* Models */,
+				04CEFA6E246454D600EBBB4C /* Views */,
+				04CEFA6F246454E600EBBB4C /* Extensions */,
+				04CEFA712464553200EBBB4C /* Custom Cells */,
 				04CEFA592462FE7E00EBBB4C /* Assets.xcassets */,
 				04CEFA5B2462FE7E00EBBB4C /* LaunchScreen.storyboard */,
 				04CEFA5E2462FE7E00EBBB4C /* Info.plist */,
 				04CEFA562462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld */,
 			);
 			path = iTunesTopSongs;
+			sourceTree = "<group>";
+		};
+		04CEFA6E246454D600EBBB4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04CEFA642463079E00EBBB4C /* MainView.swift */,
+				04E622542464577E00C9B4CD /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04CEFA6F246454E600EBBB4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04CEFA662463081D00EBBB4C /* MainViewExtensions.swift */,
+				0418029124645DD0006ACC6A /* DetailViewExtensions.swift */,
+				04CEFA6C2464526100EBBB4C /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04CEFA702464551100EBBB4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CEFA6A24630D1000EBBB4C /* AlbumModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04CEFA712464553200EBBB4C /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04CEFA682463085800EBBB4C /* MainViewCustomCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		04E62253246456ED00C9B4CD /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04CEFA512462FE7900EBBB4C /* ViewController.swift */,
+				04E62251246456E700C9B4CD /* DetailViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +191,6 @@
 			files = (
 				04CEFA5D2462FE7E00EBBB4C /* LaunchScreen.storyboard in Resources */,
 				04CEFA5A2462FE7E00EBBB4C /* Assets.xcassets in Resources */,
-				04CEFA552462FE7900EBBB4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,21 +204,21 @@
 				04CEFA582462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld in Sources */,
 				04CEFA522462FE7900EBBB4C /* ViewController.swift in Sources */,
 				04CEFA4E2462FE7900EBBB4C /* AppDelegate.swift in Sources */,
+				0418029224645DD0006ACC6A /* DetailViewExtensions.swift in Sources */,
+				04CEFA672463081D00EBBB4C /* MainViewExtensions.swift in Sources */,
+				04CEFA6D2464526100EBBB4C /* UIImageViewExtensions.swift in Sources */,
+				04E622552464577E00C9B4CD /* DetailView.swift in Sources */,
+				04CEFA652463079E00EBBB4C /* MainView.swift in Sources */,
+				04CEFA6B24630D1000EBBB4C /* AlbumModel.swift in Sources */,
+				04E62252246456E700C9B4CD /* DetailViewController.swift in Sources */,
 				04CEFA502462FE7900EBBB4C /* SceneDelegate.swift in Sources */,
+				04CEFA692463085800EBBB4C /* MainViewCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04CEFA532462FE7900EBBB4C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04CEFA542462FE7900EBBB4C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04CEFA5B2462FE7E00EBBB4C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
