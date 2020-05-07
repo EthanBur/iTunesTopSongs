@@ -45,15 +45,16 @@ class MainViewCell: UITableViewCell {
         albumImage.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5).isActive = true
         albumImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5).isActive = true
         albumImage.widthAnchor.constraint(equalToConstant: 70).isActive = true
+        albumImage.heightAnchor.constraint(equalToConstant: 70).isActive = true
         
         albumLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         albumLabel.bottomAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        albumLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor).isActive = true
+        albumLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 10).isActive = true
         albumLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
         artistLabel.topAnchor.constraint(equalTo: albumLabel.bottomAnchor).isActive = true
         artistLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        artistLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor).isActive = true
+        artistLabel.leadingAnchor.constraint(equalTo: albumImage.trailingAnchor, constant: 10).isActive = true
         artistLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     }
 }

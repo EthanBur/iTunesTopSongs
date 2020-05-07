@@ -12,8 +12,6 @@ extension DetailView {
     @objc func buttonTapped(sender: UIButton) {
         if let url = URL(string: link) {
             UIApplication.shared.open(url)
-        } else {
-            itunesButton.titleLabel?.text = "URL Not Found"
-        }
+        } 
     }
 }

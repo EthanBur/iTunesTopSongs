@@ -40,20 +40,24 @@ extension MainView: UITableViewDataSource, UITableViewDelegate {
             if error == nil {
                 do{
                     let albumData = try decoder.decode(AlbumModel.self, from: data ?? Data())
-                    if albumData.feed.results != nil {
-                        self.albums = self.albums + albumData.feed.results
-                        DispatchQueue.main.async {
-                            self.tableview.reloadData()
-                        }
+                    self.albums = self.albums + albumData.feed.results
+                    DispatchQueue.main.async {
+                        self.tableview.reloadData()
                     }
                 } catch {
-                   print("Error: \(String(describing: error))")
+                    self.createAlert(title: "Incorrect Data Format", message: "The data received from iTunes was incorrectly formatted.", buttonTitle: "Cancel")
                 }
             }
             else{
-                print("Error: \(String(describing: error))")
+                self.createAlert(title: "Data Task Error", message: "The data task was unable to complete task", buttonTitle: "Cancel")
             }
         }
         task.resume()
+    }
+    
+    func createAlert(title: String, message: String, buttonTitle: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: buttonTitle, style: .cancel, handler: nil))
+        self.controller?.present(alert, animated: true)
     }
 }
