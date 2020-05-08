@@ -11,7 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     let detailView = DetailView()
-    var album = Album(artistName: "", albumName: "", albumImage: "", releaseDate: "", copyrightInfo: "", genre: [Genre(genreName: "")], albumUrl: "")
+    var album: Album!
     
     override func viewDidLoad() {
         super.viewDidLoad()
