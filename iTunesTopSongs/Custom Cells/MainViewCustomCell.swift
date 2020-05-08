@@ -15,20 +15,20 @@ class MainViewCell: UITableViewCell {
         label.numberOfLines = 0
         return label
     }()
-
+    
     let albumLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
     }()
-
+    
     let albumImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
-
+    
     override init (style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupCellView()
@@ -43,10 +43,9 @@ class MainViewCell: UITableViewCell {
         addSubview(artistLabel)
         addSubview(albumLabel)
         
-        albumImage.heightAnchor.constraint(greaterThanOrEqualToConstant: 70).isActive = true
+        albumImage.heightAnchor.constraint(equalToConstant: 70).isActive = true
         albumImage.widthAnchor.constraint(equalToConstant: 70).isActive = true
         albumImage.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
-        albumImage.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true
         albumImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
         
         albumLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
