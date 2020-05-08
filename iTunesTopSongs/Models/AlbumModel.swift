@@ -7,8 +7,7 @@
 //
 
 import UIKit
-//own files
-//Albums
+
 struct AlbumModel: Decodable {
     var feed: Feed
 }

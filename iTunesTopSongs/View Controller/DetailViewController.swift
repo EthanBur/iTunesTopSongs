@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
         detailView.link = album.albumUrl
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override func loadView() {
         view = detailView
     }
 }
