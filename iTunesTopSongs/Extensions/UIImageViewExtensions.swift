@@ -2,8 +2,8 @@
 //  UIImageViewExtensions.swift
 //  iTunesTopSongs
 //
-//  Created by mcs on 5/7/20.
-//  Copyright © 2020 MCS. All rights reserved.
+//  Created by Ethan Burns on 5/7/20.
+//  Copyright © 2020 Ethan Burns. All rights reserved.
 //
 
 import UIKit

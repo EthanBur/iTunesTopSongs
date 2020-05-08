@@ -2,8 +2,8 @@
 //  MainViewExtensions.swift
 //  iTunesTopSongs
 //
-//  Created by mcs on 5/6/20.
-//  Copyright © 2020 MCS. All rights reserved.
+//  Created by Ethan Burns on 5/6/20.
+//  Copyright © 2020 Ethan Burns. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ extension MainView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MainViewCell else {
-            return MainViewCell()
+            return UITableViewCell()
         }
         cell.albumImage.downloadImageFrom(link: albums[indexPath.row].albumImage, contentMode: .scaleAspectFit)
         cell.albumLabel.text = albums[indexPath.row].albumName
@@ -37,9 +37,9 @@ extension MainView: UITableViewDataSource, UITableViewDelegate {
         let task = URLSession.shared.dataTask(with: url) {
             data, response, error in
             
-            if error == nil {
+            if let data = data {
                 do{
-                    let albumData = try decoder.decode(AlbumModel.self, from: data ?? Data())
+                    let albumData = try decoder.decode(AlbumModel.self, from: data)
                     self.albums = self.albums + albumData.feed.results
                     DispatchQueue.main.async {
                         self.tableview.reloadData()
@@ -47,8 +47,7 @@ extension MainView: UITableViewDataSource, UITableViewDelegate {
                 } catch {
                     self.createAlert(title: "Incorrect Data Format", message: "The data received from iTunes was incorrectly formatted.", buttonTitle: "Cancel")
                 }
-            }
-            else{
+            } else {
                 self.createAlert(title: "Data Task Error", message: "The data task was unable to complete task", buttonTitle: "Cancel")
             }
         }

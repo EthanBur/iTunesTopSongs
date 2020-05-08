@@ -2,8 +2,8 @@
 //  MainView.swift
 //  iTunesTopSongs
 //
-//  Created by mcs on 5/6/20.
-//  Copyright © 2020 MCS. All rights reserved.
+//  Created by Ethan Burns on 5/6/20.
+//  Copyright © 2020 Ethan Burns. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class MainView: UIView {
     
     weak var controller: UIViewController?
     var albums: [Album] = []
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -27,7 +27,7 @@ class MainView: UIView {
         
         setupViews()
         getAlbums()
-}
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

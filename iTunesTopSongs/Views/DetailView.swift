@@ -2,11 +2,10 @@
 //  DetailView.swift
 //  iTunesTopSongs
 //
-//  Created by mcs on 5/7/20.
-//  Copyright © 2020 MCS. All rights reserved.
+//  Created by Ethan Burns on 5/7/20.
+//  Copyright © 2020 Ethan Burns. All rights reserved.
 //
 
-//a larger image at the top of the screen and the same information that was shown on the cell, plus genre, release date, and copyright info below the image. A button should also be included on this second view that when tapped fast app switches to the album page in the iTunes store. The button should be centered horizontally and pinned 20 points from the bottom of the view and 20 points from the leading and trailing edges of the view.
 
 import UIKit
 
@@ -15,6 +14,7 @@ class DetailView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
@@ -22,6 +22,7 @@ class DetailView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
@@ -35,6 +36,7 @@ class DetailView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
@@ -42,7 +44,7 @@ class DetailView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.numberOfLines = 2
+        label.numberOfLines = 0
         return label
     }()
     
@@ -50,6 +52,7 @@ class DetailView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     

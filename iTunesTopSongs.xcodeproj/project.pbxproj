@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0418029224645DD0006ACC6A /* DetailViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418029124645DD0006ACC6A /* DetailViewExtensions.swift */; };
+		0461CC522465A3E400FF5276 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461CC512465A3E400FF5276 /* Album.swift */; };
+		0461CC542465A40200FF5276 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461CC532465A40200FF5276 /* Genre.swift */; };
+		0461CC562465A42000FF5276 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461CC552465A42000FF5276 /* Feed.swift */; };
 		04CEFA4E2462FE7900EBBB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA4D2462FE7900EBBB4C /* AppDelegate.swift */; };
 		04CEFA502462FE7900EBBB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA4F2462FE7900EBBB4C /* SceneDelegate.swift */; };
 		04CEFA522462FE7900EBBB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA512462FE7900EBBB4C /* ViewController.swift */; };
-		04CEFA582462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA562462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld */; };
 		04CEFA5A2462FE7E00EBBB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CEFA592462FE7E00EBBB4C /* Assets.xcassets */; };
 		04CEFA5D2462FE7E00EBBB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEFA5B2462FE7E00EBBB4C /* LaunchScreen.storyboard */; };
 		04CEFA652463079E00EBBB4C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEFA642463079E00EBBB4C /* MainView.swift */; };
@@ -25,11 +27,13 @@
 
 /* Begin PBXFileReference section */
 		0418029124645DD0006ACC6A /* DetailViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewExtensions.swift; sourceTree = "<group>"; };
+		0461CC512465A3E400FF5276 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		0461CC532465A40200FF5276 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		0461CC552465A42000FF5276 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		04CEFA4A2462FE7900EBBB4C /* iTunesTopSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTopSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEFA4D2462FE7900EBBB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CEFA4F2462FE7900EBBB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04CEFA512462FE7900EBBB4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04CEFA572462FE7900EBBB4C /* iTunesTopSongs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesTopSongs.xcdatamodel; sourceTree = "<group>"; };
 		04CEFA592462FE7E00EBBB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CEFA5C2462FE7E00EBBB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CEFA5E2462FE7E00EBBB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +86,6 @@
 				04CEFA592462FE7E00EBBB4C /* Assets.xcassets */,
 				04CEFA5B2462FE7E00EBBB4C /* LaunchScreen.storyboard */,
 				04CEFA5E2462FE7E00EBBB4C /* Info.plist */,
-				04CEFA562462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld */,
 			);
 			path = iTunesTopSongs;
 			sourceTree = "<group>";
@@ -110,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				04CEFA6A24630D1000EBBB4C /* AlbumModel.swift */,
+				0461CC552465A42000FF5276 /* Feed.swift */,
+				0461CC512465A3E400FF5276 /* Album.swift */,
+				0461CC532465A40200FF5276 /* Genre.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,18 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CEFA582462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld in Sources */,
 				04CEFA522462FE7900EBBB4C /* ViewController.swift in Sources */,
 				04CEFA4E2462FE7900EBBB4C /* AppDelegate.swift in Sources */,
 				0418029224645DD0006ACC6A /* DetailViewExtensions.swift in Sources */,
+				0461CC562465A42000FF5276 /* Feed.swift in Sources */,
 				04CEFA672463081D00EBBB4C /* MainViewExtensions.swift in Sources */,
 				04CEFA6D2464526100EBBB4C /* UIImageViewExtensions.swift in Sources */,
 				04E622552464577E00C9B4CD /* DetailView.swift in Sources */,
 				04CEFA652463079E00EBBB4C /* MainView.swift in Sources */,
 				04CEFA6B24630D1000EBBB4C /* AlbumModel.swift in Sources */,
 				04E62252246456E700C9B4CD /* DetailViewController.swift in Sources */,
+				0461CC542465A40200FF5276 /* Genre.swift in Sources */,
 				04CEFA502462FE7900EBBB4C /* SceneDelegate.swift in Sources */,
 				04CEFA692463085800EBBB4C /* MainViewCustomCell.swift in Sources */,
+				0461CC522465A3E400FF5276 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mcs.iTunesTopSongs;
+				PRODUCT_BUNDLE_IDENTIFIER = EthanBurns.iTunesTopSongs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mcs.iTunesTopSongs;
+				PRODUCT_BUNDLE_IDENTIFIER = EthanBurns.iTunesTopSongs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,19 +410,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		04CEFA562462FE7900EBBB4C /* iTunesTopSongs.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				04CEFA572462FE7900EBBB4C /* iTunesTopSongs.xcdatamodel */,
-			);
-			currentVersion = 04CEFA572462FE7900EBBB4C /* iTunesTopSongs.xcdatamodel */;
-			path = iTunesTopSongs.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 04CEFA422462FE7900EBBB4C /* Project object */;
 }
